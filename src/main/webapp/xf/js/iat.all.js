@@ -603,8 +603,10 @@ var IFlyIatSession = (function (window, navigator) {
 
 
         //trows 音频流对象 京ME在此接入可能最大 e.inputBuffer.getChannelData(0)
+        //trows 替换audioNode对象
         audioNode.scriptNode.onaudioprocess = function (e) {
             if (!recording) return;
+            console.log(e.inputBuffer.getChannelData(0));
             recorderWorker.sendData(e.inputBuffer.getChannelData(0));
         };
         audioNode.source.connect(audioNode.scriptNode);
