@@ -58,6 +58,8 @@ var iflytek = (function(document){
      * 初始化Session会话
      */
     var session = new IFlyIatSession({
+        
+        //对象回调方法
         "callback":{
             "onResult": function (err, result) {
                 /* 若回调的err为空或错误码为0，则会话成功，可提取识别结果进行显示*/

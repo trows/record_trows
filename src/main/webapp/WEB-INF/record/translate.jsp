@@ -41,11 +41,16 @@
     <canvas id="volume" height="4"></canvas>
   </div>
 </div>
+
+<div id="message" style="width: 100%;min-height: 200px;">
+
+</div>
 <script>
   onerror=function(a,b,c){
     alert(a+b+c);
   }
 </script>
+<script type="text/javascript" src="./js/jquery-2.2.3.min.js"> </script>
 <script type="text/javascript" src='./xf/js/fingerprint2.min.js'></script>
 <script type="text/javascript" src="./xf/js/iat.all.js"></script>
 <script type="text/javascript" src="./xf/js/demo.js"></script>
