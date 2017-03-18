@@ -19,4 +19,9 @@ public class IndexController {
     public String toIndex2(){
         return "record/index2";
     }
+
+    @RequestMapping("/translate.htm")
+    public String toTranslate(){
+        return "record/translate";
+    }
 }
